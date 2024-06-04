@@ -1,0 +1,126 @@
+header{
+
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    height: 6.5rem;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.top_infos{
+    max-width: 100%;
+    width: 100%;
+    height: 305px;
+    background-color: var(--cor-secundaria);
+
+}
+.top_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.title_curso{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 2.08px;
+    max-width: 291px;
+}
+
+.details{
+
+    width: 405px;
+    height: 158px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.list_buttons{
+
+    max-width: 100%;
+    width: 100%;
+    height: 88px;
+    flex-shrink: 0;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 44px;
+}
+.content_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.left_buttons{
+    display: flex;
+    gap: 24px;
+}
+.btn_plano{
+    width: 315px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    border: 1px solid var(--cor-primaria);
+    background: #FFF;
+    color: var(--cor-primaria);
+}
+.org_detail{
+    margin-bottom: 44px;
+}
+.org_flex{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+}
+.organizacao{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.organizacao label{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+.organizacao img {
+    width: 68px;
+    height: 62px;
+    flex-shrink: 0;
+}
+.arrecadacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.arrecadacao label {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 28px;
+    font-weight: 600;
+}
+.descricao{
+    padding: 28px 30px;
+    height: 273px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.desc_title{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.descricao h3 {
+    margin: 0;
+}
+.descricao p {
+    
+    font-size: 18px;
+}

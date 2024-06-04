@@ -1,0 +1,63 @@
+header{
+
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    height: 6.5rem;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 54px;
+}
+
+.title_cursos_apresentation{
+
+    margin-bottom: 50px;
+
+}
+
+.card{
+
+    width: 100% !important;
+   
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px !important;
+    padding-bottom: 38px !important;
+}
+
+.card-title{
+    font-size: 24px;
+}
+.card-text{
+
+    font-size: 18px;
+    max-width: 302px;
+    color: var(--cor-text-gray);
+
+}
+
+.card-link{
+
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.btn-primary{
+
+    max-width: 150px;
+
+}
+
+.cards_cursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 24px;
+    max-width: 100%;
+    width: 100%;
+    height: max-content;
+}
