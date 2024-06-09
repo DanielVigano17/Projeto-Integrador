@@ -113,6 +113,17 @@ header{
     font-weight: 700;
 
 }
+.qr_pagamento{
+    max-width: 300px;
+    margin-bottom: 16px;
+}
+.pagamento_title{
+    font-weight: 700;
+}
+.pagamento_subtitle{
+    text-align: center;
+}
+
 .org_detail{
     margin-bottom: 44px;
 }

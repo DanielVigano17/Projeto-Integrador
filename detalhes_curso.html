@@ -75,8 +75,27 @@
                 <button class="btn_participar">Participar</button>
                 <button class="btn_plano">Adicionar um plano de estudos</button>
             </div>
-
-            <button class="btn_doar">Realizar Doação</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pagamento por Pix</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-itens-center" style=" align-items: center; justify-content: center; flex-direction: column;">
+                        <h3 class="pagamento_title">Copie ou escaneie o QR CODE</h3>
+                        <p class="pagamento_subtitle">Ao copiar o código, abra seu aplicativo cadastrado no PIX e realize o seu pagamento de forma rápida</p>
+                        <img src="img/qr_code_img.jpeg" class="qr_pagamento" alt="">
+                        <button class="btn_plano">Copiar Código</button>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn_doar" data-bs-dismiss="modal">Pagamento Realizado</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button class="btn_doar" data-bs-toggle="modal" data-bs-target="#exampleModal">Realizar Doação</button>
         </div>
     </div>
 
