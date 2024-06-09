@@ -23,22 +23,23 @@
 
         <div class="right_content">
     
-             <form action="#">
+             <form action="#" id="form_cadastro">
               <img src="img/logo_img.svg" alt="Logo do StudyLovin">
               <h2>Cadastre-se grátis !</h2>
-              <input type="text" id="name_input" required placeholder="Nome">
-              <input type="email" id="email_input" required placeholder="Email">
-              <input type="password" id="password_input" required placeholder="Senha">
+              <input type="text" id="name_input" name="nome" required placeholder="Nome">
+              <input type="email" id="email_input" name="email" required placeholder="Email">
+              <input type="password" id="password_input" name="password" required placeholder="Senha">
 
               <button>Entrar</button>
 
-              <p class="text_alert">Não possui conta? <a href="#">Cadastre-se</a></p>
+              <p class="text_alert">Já possui conta? <a href="#">Faça Login</a></p>
 
              </form>
         </div>
 
     </section>
-    
+
+<script src="js/cadastro.js"></script>
 </body>
 
 </html>
