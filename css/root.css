@@ -94,8 +94,10 @@ header{
 
 }
 .btn-primary{
-    
     border-radius: 17px !important;
     background-color: var(--cor-primaria) !important;
-
+}
+button:hover {
+    transform: scale(0.95);
+    transition: background-color 0.3s ease, transform 0.3s ease
 }
