@@ -38,18 +38,18 @@
             <div class="left_content">
 
                 <label data-aos="fade-right">Nome do Curso</label>
-                <input type="text" class="inputs_left" data-aos="fade-right">
+                <input type="text" class="inputs_left" id="input_nome" data-aos="fade-right">
                 <label data-aos="fade-right">Link para a Página Interna do Curso</label>
-                <input type="text" class="inputs_left" data-aos="fade-right">
+                <input type="text" class="inputs_left" id="input_link" data-aos="fade-right">
                 <label data-aos="fade-right">Carga Horária</label >
-                <input type="text" class="inputs_left" data-aos="fade-right">
+                <input type="text" class="inputs_left" id="input_horas" data-aos="fade-right">
                 
 
             </div>
 
             <div class="right_content">
 
-                <div class="icon_curso" data-aos="fade-left">
+                <div class="icon_curso" >
                     <p class="label_input_file">Icone do Curso</p>
                     <button class="file_input" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="img/Upload_img.svg" alt="">
@@ -65,7 +65,7 @@
                             </div>
                             <div class="modal-body d-flex align-itens-center" style=" align-items: center; justify-content: center; flex-direction: column;">
                                 <p class="pagamento_subtitle">Inserir Link :</p>
-                                <input type="text" class="inputs_left">
+                                <input type="text" class="inputs_left" id="input_icon_curso">
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="salvar" data-bs-dismiss="modal">Salvar</button>
@@ -76,7 +76,7 @@
 
                 </div>
 
-                <div class="icon_curso" data-aos="fade-left">
+                <div class="icon_curso" >
                     <p class="label_input_file">Banner do Curso</p>
                     <button class="file_input" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <img src="img/Upload_img.svg" alt="">
@@ -92,7 +92,7 @@
                             </div>
                             <div class="modal-body d-flex align-itens-center" style=" align-items: center; justify-content: center; flex-direction: column;">
                                 <p class="pagamento_subtitle">Inserir Link :</p>
-                                <input type="text" class="inputs_left">
+                                <input type="text" class="inputs_left" id="input_banner_curso">
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="salvar" data-bs-dismiss="modal">Salvar</button>
@@ -117,7 +117,7 @@
                 <h3>Descrição</h3>
             </div>
     
-            <textarea placeholder="Digite aqui Descrição do curso" id="descricao_input"></textarea>
+            <textarea id="input_desc" placeholder="Digite aqui Descrição do curso" id="descricao_input"></textarea>
     
     
         </div>
@@ -138,6 +138,7 @@
     once: true
   });
 </script>
+<script src="js/cadastro_curso.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 

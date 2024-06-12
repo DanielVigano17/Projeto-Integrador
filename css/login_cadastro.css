@@ -88,7 +88,11 @@
     font-size: 24px;
     font-weight: 400;
 }
-
+.text_left{
+    color: var(--cor-text-white);
+    font-size: 24px;
+    font-weight: 400;
+}
 .text_alert a {
     color: var(--cor-primaria);
 }

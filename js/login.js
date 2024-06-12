@@ -3,6 +3,15 @@ const emailInput = document.querySelector("#email_input");
 const passwordInput = document.querySelector("#password_input");
 const formLogin = document.querySelector("#form_login");
 
+const cursos = [
+    {
+        id:"1",
+        nome:"Curso de Informática",
+        desc:"Curso gratuito e de qualidade para capacitação e qualificação profissional",
+        banner: "img/img_curso.svg",
+    },
+ ]
+
 // Evento de envio do formulário
 formLogin.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -23,6 +32,7 @@ function buscarLogin(email, password) {
 
     if (userRegistered) {
         sessionStorage.setItem("user", JSON.stringify(userRegistered));
+        localStorage.setItem("cursos", JSON.stringify(cursos));
         window.location.href = "/home.html";
     } else {
         alert("Usuário ou senha inválido");
