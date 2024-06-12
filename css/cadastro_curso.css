@@ -13,9 +13,18 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.title_cursos_apresentation{
-    
+.salvar{
+    width: 152px;
+    height: 45.29px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: var(--cor-primaria);
+    color: var(--cor-text-white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
 }
+
 .content_top{
 
     display: flex;
@@ -49,6 +58,44 @@ header{
     padding-left: 24px;
 }
 
+.right_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+    gap: 150px;
+}
+.label_input_file{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 181px;
+    height: 49px;
+    flex-shrink: 0;
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.icon_curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon_curso input{
+    display: flex;
+    flex-direction: column;
+}
+
+.file_input {
+    width: 134px;
+    height: 134px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #785FEE;
+    background-color: transparent;
+}
+
 .descricao{
     display: flex;
     flex-direction: column;
@@ -66,8 +113,11 @@ header{
 .descricao h3 {
     margin: 0;
 }
-.descricao p {
+.descricao textarea {
+    resize: none;
     max-width: 900px;
     margin: 0;
+    height: 100%;
     font-size: 18px;
+    color: var(--cor-text-gray);
 }

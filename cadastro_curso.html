@@ -24,7 +24,7 @@
         
         <div class="title_salvar">
             <h1 class="title_cursos_apresentation">Cadastro de Curso</h1>
-            <button>Salvar</button>
+            <button class="salvar">Salvar</button>
         </div>
 
         <div class="content_top">
@@ -44,13 +44,58 @@
             <div class="right_content">
 
                 <div class="icon_curso">
-                    <p>Icone do Curso</p>
-                    <input type="file" class="file_input">
+                    <p class="label_input_file">Icone do Curso</p>
+                    <button class="file_input" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="img/Upload_img.svg" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Icone do Curso</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex align-itens-center" style=" align-items: center; justify-content: center; flex-direction: column;">
+                                <p class="pagamento_subtitle">Inserir Link :</p>
+                                <input type="text" class="inputs_left">
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="salvar" data-bs-dismiss="modal">Salvar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="icon_curso">
-                    <p>Icone do Curso</p>
-                    <input type="file" class="file_input">
+                    <p class="label_input_file">Banner do Curso</p>
+                    <button class="file_input" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <img src="img/Upload_img.svg" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Banner do Curso</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex align-itens-center" style=" align-items: center; justify-content: center; flex-direction: column;">
+                                <p class="pagamento_subtitle">Inserir Link :</p>
+                                <input type="text" class="inputs_left">
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="salvar" data-bs-dismiss="modal">Salvar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
                 </div>
                 
 
@@ -58,6 +103,7 @@
 
         </div>
 
+       <div class="container">
         <div class="descricao">
 
             <div class="desc_title">
@@ -65,12 +111,11 @@
                 <h3>Descrição</h3>
             </div>
     
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non massa pharetra, euismod urna a, ultrices eros. Mauris quis eleifend velit. Donec magna tellus, fringilla a justo pellentesque, semper tincidunt ex. Suspendisse suscipit sem id mi fringilla, ut posuere eros ullamcorper. Sed venenatis sit amet diam nec interdum. Integer aliquam interdum sapien, id fringilla turpis pellentesque vel. Nulla elementum laoreet enim sit amet lobortis. Integer ornare congue mi, et porttitor augue gravida nec. 
-            </p>
+            <textarea placeholder="Digite aqui Descrição do curso" id="descricao_input"></textarea>
     
     
         </div>
+       </div>
 
     </div>
    </div>
