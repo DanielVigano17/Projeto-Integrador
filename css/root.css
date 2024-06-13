@@ -85,12 +85,13 @@ header{
     align-items: center;
     max-width: 280px;
 }
-.logo_header h4{
+.logo_header a{
     margin-top: 16px;
     color: var(--cor-text-white);
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1.12px;
+    text-decoration: none;
 
 }
 .btn-primary{
