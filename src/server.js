@@ -29,7 +29,7 @@ app.get('/cursos', (req, res) => {
     res.render('cursos')
 })
 
-app.get('/cadastro-cursos', (req, res) => {
+app.get('/cadastro_cursos', (req, res) => {
     res.render('cadastro_curso')
 })
 
