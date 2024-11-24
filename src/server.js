@@ -17,6 +17,26 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
+app.get('/cadastro', (req, res) => {
+    res.render('cadastro')
+})
+
+app.get('/cursos', (req, res) => {
+    res.render('cursos')
+})
+
+app.get('/cadastro-cursos', (req, res) => {
+    res.render('cadastro_curso')
+})
+
+app.get('/detalhes-curso', (req, res) => {
+    res.render('detalhes_curso')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
