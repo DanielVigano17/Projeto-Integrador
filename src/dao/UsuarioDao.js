@@ -2,8 +2,8 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-class UsuarioDao {
-  async create({ email, nome, senha }) {
+
+  async function createUser( email, nome, senha ) {
     try{
       const user = await prisma.usuario.create({
         data: {
@@ -12,13 +12,13 @@ class UsuarioDao {
           senha: senha,
         },
       });
-      
+
       return user; // Retorna o usuário criado
     }catch(erro){
       console.log(erro.message)
     }
   }
-}
 
-export default UsuarioDao;
+
+export default createUser;
 
