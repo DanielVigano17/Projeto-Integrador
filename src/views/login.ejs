@@ -29,6 +29,10 @@
               <input type="email" name="email" id="email_input" required placeholder="Email" required>
               <input type="password" name="senha" id="password_input" required placeholder="Senha" required>
 
+              <% if (error) { %>
+                <p class="text_alert" style="color: red; font-size: 18px;"><%= error %></p>
+              <% } %>
+
               <button type="submit">Entrar</button>
 
               <p class="text_alert">Não possui conta? <a href="/cadastro">Cadastre-se</a></p>

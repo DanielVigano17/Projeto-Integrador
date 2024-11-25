@@ -27,7 +27,7 @@ app.get('/',checkLogin, (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    res.render('login')
+    res.render('login',{error: null})
 })
 
 app.post('/login', async (req,res)=>{
@@ -36,7 +36,7 @@ app.post('/login', async (req,res)=>{
     const usuario = await usuarioExist(email,senha);
 
     if(usuario == null){
-        return res.redirect("/login");
+        return res.render("login",{error:"Usuário ou senha incorretos"});
     }
 
     res.clearCookie('usuarioEmail');
