@@ -1,15 +1,23 @@
 import { PrismaClient } from '@prisma/client';
+import bcrypt from 'bcrypt';
 
 const prisma = new PrismaClient();
 
 
+  async function hashPassword(plainPassword) {
+      const saltRounds = 10; // Define o custo do hash (mais alto = mais seguro, mas mais lento)
+      const hashedPassword = await bcrypt.hash(plainPassword, saltRounds);
+      return hashedPassword;
+  }
+
   export async function createUser( email, nome, senha ) {
+    const hashedPassword = await bcrypt.hash(senha, 10);
     try{
       const user = await prisma.usuario.create({
         data: {
           email: email,
           nome: nome,
-          senha: senha,
+          senha: hashedPassword,
         },
       });
 
@@ -18,6 +26,11 @@ const prisma = new PrismaClient();
       console.log(erro.message)
     }
   }
+
+  async function verifyPassword(plainPassword, hashedPassword) {
+    const isMatch = await bcrypt.compare(plainPassword, hashedPassword);
+    return isMatch; // Retorna true se as senhas coincidem, caso contrário, false
+}
 
   export async function usuarioExist( email, senha ) {
     try {
@@ -31,8 +44,9 @@ const prisma = new PrismaClient();
         throw new Error("Usuário não encontrado");
       }
   
+      const isValidPassword = await verifyPassword(senha, user.senha);
       // Verifica se a senha corresponde
-      if (user.senha !== senha) {
+      if (!isValidPassword) {
         throw new Error("Senha inválida");
       }
 

@@ -12,7 +12,7 @@ function listarItensDaLoja (){
                 <div class="card-body">
                   <h5 class="card-title">${item.nome}</h5>
                   <p class="card-text">${item.desc}</p>
-                  <a href="detalhes_curso.html" class="btn btn-primary">Participar</a>
+                  <a href="/detalhes-curso" class="btn btn-primary">Participar</a>
                 </div>
               </div>
             `;

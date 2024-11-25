@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', checkLogin,(req, res) => {
+app.get('/',checkLogin, (req, res) => {
   res.render('home')
 })
 
@@ -44,7 +44,7 @@ app.post('/login', async (req,res)=>{
     return res.redirect("/");
 })
 
-app.get('/cadastro',checkLogin,(req, res) => {
+app.get('/cadastro',(req, res) => {
     res.render('cadastro')
 })
 
@@ -77,7 +77,7 @@ app.post('/cadastrar-curso', async (req,res)=>{
     }
 })
 
-app.get('/detalhes-curso', checkLogin ,(req, res) => {
+app.get('/detalhes-curso', checkLogin,(req, res) => {
     res.render('detalhes_curso')
 })
 
