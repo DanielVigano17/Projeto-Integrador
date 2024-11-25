@@ -14,30 +14,27 @@ const cursos = [
 
 // Evento de envio do formulário
 formLogin.addEventListener("submit", function(event) {
-    event.preventDefault();
+    console.log("Passei")
     popularBd();
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    buscarLogin(email, password);
 });
 
 
-// Função para buscar o login
-function buscarLogin(email, password) {
-    const usersData = JSON.parse(localStorage.getItem("users"));
+// // Função para buscar o login
+// function buscarLogin(email, password) {
+//     const usersData = JSON.parse(localStorage.getItem("users"));
 
-    const userRegistered = usersData.find(user => {
-        return user.email === email && user.senha === password;
-    });
+//     const userRegistered = usersData.find(user => {
+//         return user.email === email && user.senha === password;
+//     });
 
-    if (userRegistered) {
-        sessionStorage.setItem("user", JSON.stringify(userRegistered));
-        localStorage.setItem("cursos", JSON.stringify(cursos));
-        window.location.href = "/home.html";
-    } else {
-        alert("Usuário ou senha inválido");
-    }
-}
+//     if (userRegistered) {
+//         sessionStorage.setItem("user", JSON.stringify(userRegistered));
+//         localStorage.setItem("cursos", JSON.stringify(cursos));
+//         window.location.href = "/home.html";
+//     } else {
+//         alert("Usuário ou senha inválido");
+//     }
+// }
 
 function popularBd(){
     // Dados dos usuários
@@ -50,9 +47,8 @@ function popularBd(){
         }
     ];
 
-    // Verifica se os usuários estão armazenados no localStorage, se não estiver, armazena-os
-    if (!localStorage.getItem("users")) {
         localStorage.setItem("users", JSON.stringify(users));
-    }
+        localStorage.setItem("cursos", JSON.stringify(cursos));
+    
 
 }

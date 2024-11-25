@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 
-  async function createUser( email, nome, senha ) {
+  export async function createUser( email, nome, senha ) {
     try{
       const user = await prisma.usuario.create({
         data: {
@@ -19,6 +19,29 @@ const prisma = new PrismaClient();
     }
   }
 
+  export async function usuarioExist( email, senha ) {
+    try {
+      // Busca o usuário pelo email
+      const user = await prisma.usuario.findUnique({
+        where: { email },
+      });
+  
+      if (!user) {
+        // Usuário não encontrado
+        throw new Error("Usuário não encontrado");
+      }
+  
+      // Verifica se a senha corresponde
+      if (user.senha !== senha) {
+        throw new Error("Senha inválida");
+      }
 
-export default createUser;
+      return user
+    } catch (error) {
+      console.error('Erro ao tentar fazer login:', error);
+    } finally {
+      await prisma.$disconnect();
+    }
+  }
+
 

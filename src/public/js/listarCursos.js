@@ -2,9 +2,6 @@ const cards_cursos = document.querySelector(".cards_cursos");
 const title = document.querySelector(".title_cursos_apresentation");
 
 const cursos = JSON.parse(localStorage.getItem("cursos"))
-const user = JSON.parse(sessionStorage.getItem("user"))
-
-title.innerHTML = "Vamos começar a aprender,"+user.nome ;
 
 function listarItensDaLoja (){
     let html = "";
