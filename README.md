@@ -62,8 +62,8 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o 
 | Nome | Função | GitHub |
 |------|--------|--------|
 | Daniel Vigano da Silva | Scrum Master | [@DanielV17](https://github.com/DanielV17) |
+| Gustavo Santos Rocha | Dev Team | [@GustaHxH](https://github.com/GustaHxH) |
 | Ruan Silva Meira | Dev Team | [@RuanSMeira](https://github.com/RuanSMeira) |
-| Vinicius Martins | Dev Team | - |
 | Vinícius Silva Dornelas | Dev Team | - |
 
 ## 📬 Contato
